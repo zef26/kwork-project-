@@ -1,0 +1,50 @@
+.brands {
+    padding-top: 36px;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            color: black;
+            font-weight: 300;
+            text-decoration: underline;
+        }
+    }
+
+    &__bottom {
+
+        display: flex;
+        align-items: center;
+        gap: 44px;
+
+        &-left {
+            img {
+                margin-top: 23px;
+                width: 431px;
+                height: 229px;
+                cursor: pointer;
+            }
+        }
+
+        &-right {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &-items {
+                width: 204px;
+                height: 113px;
+                border: 1px solid gray;
+                gap: 31px;
+                margin-top: 23px;
+                cursor: pointer;
+            }
+
+        }
+
+    }
+
+
+}

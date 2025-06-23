@@ -1,0 +1,27 @@
+.categories {
+    padding-top: 44px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            a {
+                color: $main-color;
+
+            }
+
+        }
+    }
+
+
+
+
+
+
+}

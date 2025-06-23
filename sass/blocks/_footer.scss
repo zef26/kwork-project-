@@ -1,0 +1,77 @@
+.footer {
+    position: relative;
+
+    background-color: #333;
+    padding: 26.5px 0 33px 0;
+    margin-top: 79px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+
+        &-left {
+            a {
+                color: #FFC800;
+                font-size: 24px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+
+            p {
+                a {
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+        }
+
+        &-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 19px;
+
+            a {
+                line-height: 24px;
+                color: white;
+            }
+        }
+
+        &-right {
+            text-align: end;
+
+            p {
+                font-size: 10px;
+                margin-top: 24px;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        gap: 24.4px;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+
+    &__mesage {
+        position: absolute;
+        bottom: 85px;
+        right: 49px;
+        cursor: pointer;
+        opacity: 0.7;
+        transition: all .6s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+}

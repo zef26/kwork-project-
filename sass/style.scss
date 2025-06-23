@@ -1,0 +1,72 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (max-width: 600px) {
+    padding: 0 10px;
+  }
+}
+
+.banner {
+    padding-top: 30px;
+    img {
+        width: 100%;
+    }
+}
+
+
+.active {
+    
+    .menu-top {
+        transform:rotate(45deg);
+        margin-bottom: -2px !important;
+        
+    }
+    .menu-center {
+        
+        display: none !important;
+    }
+    .menu-center2 {
+        
+      display: none !important;
+     
+        }
+    .menu-bottom {
+        transform:rotate(-45deg);
+        
+        
+    }
+    
+}
+
+.active2 {
+   top: 139px !important;
+}
+
+
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/tovars';
+@import 'blocks/categories';
+@import 'blocks/brands';
+@import 'blocks/footer';
+@import 'blocks/productCards';
+@import 'blocks/basket';
+@import 'blocks/media';

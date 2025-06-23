@@ -1,0 +1,142 @@
+.tovars {
+  padding-top: 40px;
+  display: flex;
+}
+
+.tovar-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+
+}
+
+.tovar-bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+
+  background: white;
+  border: 1px solid #ddd;
+  border-bottom: none;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.product-card {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  border-right: 1px solid #eee;
+  cursor: pointer;
+
+  .product-img img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .product-price {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 12px;
+    text-align: end;
+  }
+
+  .product-btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+
+    .buy-button {
+
+      background-color: #8b277a;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .product-btns-img {
+      width: 100%;
+
+      display: flex;
+      gap: 30px;
+
+      img {
+        width: 32px;
+        height: 32px;
+
+      }
+    }
+
+
+  }
+
+
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  .slider-dot {
+    width: 24px;
+    height: 24px;
+    background-color: #e1e1e1;
+    border: none;
+
+    cursor: pointer;
+
+    &.active {
+      background-color: #480035;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .product-card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 900px) {
+  .product-card {
+    width: 33.3333%;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 600px) {
+  .product-card {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 599px) {
+  .product-card {
+    width: 100%;
+  }
+}
